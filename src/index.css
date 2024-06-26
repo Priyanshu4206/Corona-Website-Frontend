@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    color: red;
+}
+
+body {
+    font-family: Verdana;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(1, 1, 39);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #05254Dff;
+    padding: 10px 2rem;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}

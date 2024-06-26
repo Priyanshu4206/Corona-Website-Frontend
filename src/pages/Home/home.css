@@ -1,0 +1,364 @@
+.hero-section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    padding-left: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section .btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-section .btn-container .read-btn {
+    background-color: red;
+    color: white;
+}
+
+.hero-section .btn-container .about-btn {
+    background-color: white;
+    color: rgb(1, 1, 39);
+}
+
+.about-section {
+    padding: 10vh 5%;
+    position: relative;
+}
+
+.about-section .floating-container {
+    position: absolute;
+    top: -5rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 2rem 3%;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-section .floating-container .about-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    color: rgb(1, 1, 39);
+}
+
+.about-section .floating-container .about-content h2 {
+    position: relative;
+}
+
+.about-section .floating-container .about-content h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    border: 3.5px solid red;
+    width: 75px;
+    border-radius: 8px;
+}
+
+.about-section .floating-container .img-wrapper {
+    width: 25%;
+}
+
+.about-section .floating-container .img-wrapper img {
+    width: 100%;
+}
+
+
+.about-section .content-container {
+    margin-top: 22.5rem;
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-section .content-container .img-wrapper img {
+    width: 100%;
+}
+
+.about-section .content-container .content-wrapper {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.actions-section {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    line-height: 1;
+}
+
+.actions-section .actions-container {
+    border-radius: 100px;
+    width: 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 5rem 1rem;
+}
+
+.actions-section .actions-container .action-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    min-width: 325px;
+    aspect-ratio: 1;
+}
+
+
+.actions-section .actions-container .action-wrapper .btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.actions-section .actions-container .action-wrapper .action-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    max-width: 300px;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 15px;
+}
+
+.actions-section .actions-container .action-wrapper .action-content .illustration img {
+    width: 90px;
+    aspect-ratio: 1;
+}
+
+.actions-section .actions-container .action-wrapper .action-content p {
+    font-size: 0.8rem;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news-section>p {
+    max-width: 750px;
+}
+
+.news-section .news-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.news-section .news-container .news-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    min-width: 325px;
+    margin-bottom: 1rem;
+}
+
+.news-section .news-container .news-wrapper .img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 1.25rem;
+}
+
+.news-section .news-container .news-wrapper .img-wrapper .floating-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    display: none;
+}
+
+.news-section .news-container .news-wrapper:hover .floating-btn {
+    display: block;
+}
+
+.news-section .news-container .news-wrapper .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-section .news-container .news-wrapper .illustrator {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+}
+
+.doctors-section {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.doctors-section .bg {
+    position: absolute;
+    opacity: 0.2;
+}
+
+.doctors-section .bg.bg1 {
+    bottom: -5%;
+    left: 5%;
+}
+
+.doctors-section .bg.bg2 {
+    top: 25%;
+    right: 8%;
+}
+
+.doctors-section .doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.doctors-section .doctors-container .doctors-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    min-width: 320px;
+    max-width: 500px;
+    padding: 2rem 1rem;
+    padding-top: 4rem;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.doctors-section .doctors-container .doctors-wrapper .profile-img {
+    position: absolute;
+    top: -2rem;
+    border-radius: 100%;
+    width: 75px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.doctors-section .doctors-container .doctors-wrapper .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsletter-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.newsletter-section .newsletter-form {
+    margin-top: 2rem;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.newsletter-section .newsletter-form input {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 1rem;
+    background: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+.newsletter-section .newsletter-form input:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.newsletter-section .newsletter-form .btn {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    letter-spacing: 1.2px;
+}
+
+.newsletter-section .newsletter-form .btn:hover {
+    letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 730px) {
+    .about-section .floating-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-section .floating-container .about-content {
+        width: 90%;
+    }
+
+    .news-section .news-container .news-wrapper {
+        height: fit-content;
+    }
+
+    .about-section .floating-container .img-wrapper .small-virus {
+        width: 0;
+    }
+
+    .about-section .content-container {
+        flex-direction: column;
+    }
+
+    .actions-section .actions-container {
+        border-radius: 50px;
+    }
+}
